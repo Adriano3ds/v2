@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adriano Junior</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/acss.css">
+	<link rel="stylesheet" href="css/page.css">
+	<link rel="stylesheet" href="css/SlidyPages.css">
+	<script src="https://kit.fontawesome.com/12a0a41501.js" crossorigin="anonymous"></script>
+	<script src="js/internationalization.js"></script>
+	<style>
+		img[alt*="000webhost"],
+		img[alt*="000webhost"][style],
+		img[src*="000webhost"],
+		img[src*="000webhost"][style],
+		body > div:nth-last-of-type(1)[style]{
+			opacity: 0 !important;
+			pointer-events:none !important;
+			width: 0px !important;
+			height: 0px !important;
+			visibility:hidden !important;
+			display:none !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="language-selector" class="clickable" data-selected='true'><i id="brflag" class="flag-icon flag-icon-br flag-icon-squared selected"></i><i id="usflag" class="flag-icon flag-icon-us flag-icon-squared"></i></div>
+	<div id="scrollup" class="scroll up clickable" hidden><i class="fa fa-angle-double-up"></i></div>
+	<div id="scrolldown" class="scroll down clickable"><i class="fa fa-angle-double-down"></i></div>
+	<div id="page0" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center h-100">
+			<h1 class="greetings" i18key="hi">Olá!</h1>
+			<h3 class="leading" i18key="welcome">Seja bem vindo!</h3>
+		</div>
+	</div>
+	<div id="page1" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading" i18key="whoami">QUEM SOU EU?</h1>
+			<div class="profile-img border-m border-style-dashed">
+				<img class="profile thumb-m circular" src="images/profile.jpeg" alt="">
+			</div>
+			<h3 class="font-lighter" i18key='myname'>Meu nome é <u class="font-bolder">Adriano Junior</u></h3>
+			<h4 id="about1" class="font-lighter" i18key='shortbio1'>Tenho $idade$ anos e sou estudante de Engenharia Biomédica na Universidade Federal de Uberlândia.</h4>
+		</div>
+	</div>
+	<div id="page2" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading"><i class="fas fa-info-circle"></i></h1>
+			<h4 class="font-lighter" i18key='shortbio2'>O desejo de poder inovar e criar coisas novas foi o que me fez escolher a engenharia.</h4>
+			<h4 class="font-lighter" i18key='shortbio3'>Sempre gostei muito de programação.<br><br>Fui duas vezes monitor da disciplina Introdução à Tecnologia da Computação, a qual envolvia programar em C.</h4>
+		</div>
+	</div>
+	<div id="page3" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading"><i class="fas fa-code"></i></h1>
+			<h3 class="font-lighter" i18key='knowledgein'>Tenho conhecimentos em:</h3>
+			<div class="row">
+				<ul class="font-lighter text-left">
+					<li>Python</li>
+					<li>Java</li>
+					<li>C#</li>
+					<li>C/C++</li>
+					<li>Ruby</li>
+				</ul>
+				<ul class="font-lighter text-left">
+					<li>HTML</li>
+					<li>Javascript</li>
+					<li>CSS</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page4" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading"><i class="fas fa-laptop-code"></i></h1>
+			<h3 class="font-lighter" i18key='workedwith'>Ja mexi com:</h3>
+			<div class="row">
+				<ul class="font-lighter text-left">
+					<li>Android Studio</li>
+					<li>Unity3D</li>
+					<li>Arduino</li>
+					<li>Flutter</li>
+				</ul>
+				<ul class="font-lighter text-left">
+					<li>NodeJS</li>
+					<li>Ruby on Rails</li>
+					<li>SASS</li>
+					<li>Bootstrap</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page5" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading"><i class="fas fa-tools"></i></h1>
+			<h3 class="font-lighter" i18key='projects'>PROJETOS</h3>
+			<div class="row justify-content-center w-100">
+				<div class="h-scroll" scrollable="horizontal">
+					<div class="shadow-right" hidden></div>
+					<div class="shadow-left" hidden></div>
+					<div class="card square clickable" data-toggle="modal" data-target="#desafioajModal">
+						<div class="card-body col justify-content-center">
+							<h2 class="card-title">Desafio A.J</h2>
+							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
+						</div>
+					</div>
+					<div class="card square clickable" data-toggle="modal" data-target="#cdeckModal">
+						<div class="card-body col justify-content-center">
+							<h2 class="card-title">CDeck</h2>
+							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
+						</div>
+					</div>
+					<div class="card square clickable" data-toggle="modal" data-target="#biofizzModal">
+						<div class="card-body col justify-content-center">
+							<h2 class="card-title">Biofizz</h2>
+							<p class="card-subtitle" i18key='clicktolearn'>Clique para saber mais</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page6" class="container row align-items-center bg-primary h-100 text-center">
+		<div class="col justify-content-center align-items-center h-100">
+			<h1 class="leading"><i class="fas fa-users"></i></h1>
+			<h3 class="font-lighter" i18key='networks'>MINHAS REDES</h3>
+			<div class="row justify-content-center">
+				<a href="https://www.linkedin.com/in/adrianorsjr" target="_blank" class="social clickable"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/Adriano3ds" target="_blank" class="social clickable"><i class="fab fa-github"></i></a>
+				<a href="https://twitter.com/Adriano_RSJR" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODALS -->
+
+	<div class="modal fade" id="desafioajModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="">Desafio A.J</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<p i18key="desafioajdesc">O Desafio A.J foi um site com desafios de lógica/matemática que fiz enquanto ainda estava no ensino médio. O site contava com um sistema de convite de para cadastro, com o qual o administrador deveria gerar um código para a determinada pessoa poder se registrar; login; e um painel de administrador.</p>
+				<p><span i18key="wasused">Foi utilizado:</span> HTML, CSS, Javascript, Bootstrap, PHP, MySQL, JQuery</p>
+			</div>
+			<div class="modal-footer">
+				<a href="https://adrianojr.tk/desafio" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
+				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="modal fade" id="cdeckModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="">CDeck</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<p i18key="cdeckdesc">CDeck é uma pequena biblioteca em C que permite a criação e uso de cartas em C. Além disso, ela permite imprimir a frente e o verso das cartas.</p>
+				<p><span i18key="wasused">Foi utilizado:</span> C</p>
+			</div>
+			<div class="modal-footer">
+				<a href="https://github.com/Adriano3ds/CDeck" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
+				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="modal fade" id="biofizzModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="">Biofizz</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<p i18key="biofizzdesc">Biofizz é um jogo desafiador e divertido de perguntas e respostas, cujo assunto é biofísica de sistemas, desenvolvido pelos alunos de Engenharia Biomédica, na disciplina de Biofísica do ano 2019-1.<br><br>Monte a sua equipe, desafie seus amigos e ganhe esta corrida.<br><br>Orientação: Prof. Ms. Marina Abadia Ramos – Instituto de Ciências Biomédicas, ICBIM, DEBIOF – Departamento de Biofísica, Universidade Federal de Uberlândia. Julho, 2019.</p>
+				<p><span i18key="wasused">Foi utilizado:</span> Unity, C#</p>
+			</div>
+			<div class="modal-footer">
+				<a href="https://github.com/Adriano3ds/Biofizz" target="_blank" class="btn btn-primary" i18key="access">Acessar</a>
+				<button type="button" class="btn btn-danger" data-dismiss="modal" i18key="close">Fechar</button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	  <div id="pagination">
+		<div class="radio-container">
+			<input type="radio" name="page" id="page1" checked>
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page2">
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page3">
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page4">
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page5">
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page6">
+			<div class="selector"></div>
+		</div>
+		<div class="radio-container">
+			<input type="radio" name="page" id="page7">
+			<div class="selector"></div>
+		</div>
+	</div>
+
+	<!-- Adicionar no rodapé  -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/SlidyPages.js"></script>
+</body>
+</html>
